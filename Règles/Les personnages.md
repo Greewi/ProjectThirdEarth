@@ -98,7 +98,7 @@ Déterminez un **Trait de personnalité** à même d’aider votre personnage à
 >> * **Science** : aime démonter les appareils, technophile, esprit scientifique, etc.
 >> * **Survie** : exploratrice née, rien ne lui échappe, intuition du danger, etc.
 
-Enfin, choisissez aussi deux **Traits** particuliers légers, physiques ou mentaux, qui distinguent votre chimère d’une autre, en leur attribuant aussi un score de 1. Ces éléments peuvent aider pour le rôle de votre personnage mais ce n'est pas nécessaire. *Vous pensez que ce sont des éléments émergeants, probablement dû au temps qui s’est écoulé dans votre capsule de stockage. Où alors vos créateurs ne mmaîtrisaient pas complètement ce qu'ils faisaient... et le faisaient quand même... Remarquez, ça expliquerait leur disparition.*
+Enfin, choisissez aussi deux **Traits** particuliers légers, physiques ou mentaux, qui distinguent votre chimère d’une autre, en leur attribuant aussi un score de 1. Ces éléments peuvent aider pour le rôle de votre personnage mais ce n'est pas nécessaire. *Vous pensez que ce sont des éléments émergeants, probablement dû au temps qui s’est écoulé dans votre capsule de stockage. Où alors vos créateurs ne maîtrisaient pas complètement ce qu'ils faisaient... et le faisaient quand même... Remarquez, ça expliquerait leur disparition.*
 
 Et voila, votre personnage est prêt à affronter ce monde étrange qui s’ouvre devant lui tandis que le couvercle du module de stockage glisse lentement. À moins que ce dernier se soit coincé… dans ce cas un petit peu d’aide ne serait pas de trop !
 
