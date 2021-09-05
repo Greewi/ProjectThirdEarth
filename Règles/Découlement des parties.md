@@ -2,7 +2,7 @@
 
 ## Découpage du jeu
 
-Le jeu est découpée en différentes phases : les séances et l"entre-séances.
+Le jeu est découpée en différentes phases : les séances et l'entre-séances.
 
 Les séances sont les parties à proprement dites et sont découpées en trois parties :
 * Le briefing, où le MJ et les joueurs fixent l'objectif de l'aventure et mettent à jour les personnages et introduisent les nouveaux participants.
