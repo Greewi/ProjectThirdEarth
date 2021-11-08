@@ -1,6 +1,6 @@
 # Les anciens dieux
 
-> **/!\ Ce document est réservé aux MJ !**
+> **⚠️ Ce document est réservé aux MJ !**
 
 ## L'origine des anciens dieux
 
@@ -22,9 +22,9 @@ Les nuées sont en revanche très sensible à la météo. Pratiquement inactives
 
 # La guerre des IA
 
-Au sommet de leur puissance, les anciens dieux se sont livrés une guerre sans limite. Leur conflit a même débordé de la Terre et pris des formes multiples. Si la guerre informatique pour prendre le contrôle des nuées est resté importante, c'est aussi la forme de combat qui ne permet pas vraiment de progresser : à mesure que le front s'éloigne des centres d'un ancien dieux, sa prise sur les nuées devient moins forte et celle de ses adversaires plus forte.
+Au sommet de leur puissance, les anciens dieux se sont livrés une guerre sans limite. Leur conflit a même débordé de la Terre et pris des formes multiples. Si la guerre informatique pour prendre le contrôle des nuées est restée importante, c'est aussi la forme de combat qui ne permet pas vraiment de progresser : à mesure que le front s'éloigne des centres d'un ancien dieux, sa prise sur les nuées devient moins forte et celle de ses adversaires plus forte.
 
-C'est pourquoi ils ont employé de très nombreuses des armées robotiques, sorties des fabricateurs et qu'ils ont eux-même pilotés. Au plus fort des conflits, les IA ont même employé des unités de combats massives et capables d'installer des centres de production avancés par eux-même. Ces unités de commandement étaient de formidables engins de destruction : les quelques éléments de leurs chassis qui percent encore la canopé des forêts et émergent de la tourbe des marais, sont des témoins de leur puissance.
+C'est pourquoi ils ont employé de très nombreuses armées robotiques, sorties des fabricateurs et qu'ils ont eux-même pilotés. Au plus fort des conflits, les IA ont même employé des unités de combats massives et capables d'installer des centres de production avancés par eux-même. Ces unités de commandement étaient de formidables engins de destruction : les quelques éléments de leurs chassis qui percent encore la canopé des forêts et émergent de la tourbe des marais, sont des témoins de leur puissance.
 
 L'arme nucléaire a aussi été lourdement employée, mais les anciens dieux ont rapidement mis en place des réseaux d'interceptions pour se prémunir des attaques ennemies. Il reste quelques engins interceptés enterrés sous la végétation et le sable, ainsi que dans des installations souterraines effondrées par l'action de l'eau. Mais avec le temps, leur charge de plutonium s'est tellement dégradée que ces ogives ne représentent plus vraiment un danger.
 

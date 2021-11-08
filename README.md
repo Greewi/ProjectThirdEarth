@@ -4,6 +4,8 @@
 
 Le prochain projet de JdR utilisant le Système Féerie.
 
+La Troisième Terre est un jeu de science-fiction où vous jouerez des chimères anthorpomorphes qui s'éveillent dans un monde étrange où l'humanité a disparue depuis bien longtemps.
+
 # Licence
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].

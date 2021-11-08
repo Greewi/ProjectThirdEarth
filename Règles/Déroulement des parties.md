@@ -1,18 +1,20 @@
-# Déroulement des parties
+# Déroulement du jeu
 
-## Découpage du jeu
+> **✔️ Ce document peut être lu par les joueurs.**
 
-Le jeu est découpée en différentes phases : les séances et l'entre-séances.
+## Séances et entreséances
+
+Ce jeu est conçu pour être joué en campagne ouverte et nous décomposerons celle-ci en différentes phases : les séances et les entreséances.
 
 Les séances sont les parties à proprement dites et sont découpées en trois parties :
-* Le briefing, où le MJ et les joueurs fixent l'objectif de l'aventure et mettent à jour les personnages et introduisent les nouveaux participants.
+* Le briefing, où le MJ et les joueurs fixent l'objectif de l'aventure, mettent à jour les personnages et introduisent les nouveaux participants.
 * L'aventure, qui représente la majorité de la séances et qui peut être considérée comme le cœur de la partie.
-* Le debriefing, où le MJ débrief avec les PJ
+* Le debriefing, où le MJ débrief avec les PJ.
 
-L'entre-séance se déroule en asynchrone en dehors du jeu (par exemple sur un forum ou sur Discord). Les joueurs et le MJ vont pouvoir accomplir différentes choses :
-* Après une séance, chaque joueur qui y a participé peut faire évoluer son personnage au travers des intrigues de personnage. La progression de ces intrigues doit être validée par le MJ avant les séances et non pendant.
-* Collégialement, les joueurs vont aussi décider des actions à réaliser pour le camps que les personnages vont entreprendre entre les aventures : il peut s'agir de collecter des ressources, participer à la construction d'une installation, etc.
-* Pendant ce temps, le MJ va mettre à jour le monde en fonction des conséquences de l'aventure précédente, notamment en faisant évoluer certains fronts ou en mettant à jour la carte et le camps des PJ.
+L'entreséance se déroule de façon asynchrone, par exemple sur un forum ou Discord. Les joueurs et le MJ vont pouvoir accomplir différentes choses :
+* Durant les entreséances, vous pouvez faire évoluer votre personnage en utilisant les règles des intrigues de personnage. En effet, à la fin de chaque séance, les personnages qui ont participé à l'aventure peuvent valider une étape de leur intrigue. Notez bien que la progression de ces intrigues doit être validée par le MJ pendant l'entreséances et non pendant la séances elle-même.
+* Collégialement, vous allez aussi décider de ce que vos chimères vont faire dans le camp, sur quel projet travailler. Il peut s'agir de mener des recherches, de construire une installation, de produire des outils, etc.
+* Pendant ce temps, le MJ va mettre à jour le monde pour refléter l'impact de l'aventure dessus.
 
 ## Briefing
 
@@ -22,7 +24,7 @@ Parallèlement :
 * S'il y a de nouveaux joueurs, le MJ leur explique rapidement le jeu aux nouveaux et leur fait créer rapidement leur personnage.
 * Les autres joueurs choisissent un objectif pour la séance (Explorer un secteur, Fouiller des ruines, Affronter une menace, Contacter/négocier/commercer avec une autre faction). Note : Si le camp des PJ est directement menacé au début de la séance, les joueurs n'auront pas le choix que d'y faire face !
 
-Les personnages ont eu un peu de temps pour eux depuis la séance précédente. Ils perdent les états qu'ils y avaient obtenus et ont potentiellement avancé sur leur progression (Note : les intrigues de progression sont gérées hors séance). De plus, ils ont entrenu leur camps et l'équipement à leur disposition a été renouvelé si le camps possède les installations pour leur réparation ou construction.
+Les personnages ont eu un peu de temps pour eux depuis la séance précédente. Ils perdent les états qu'ils y avaient obtenus et ont potentiellement avancé sur leur progression (Note : les intrigues de progression sont gérées hors séance). De plus, ils ont entrenu leur camps et l'équipement à leur disposition a été renouvelé si le camps possède les installations pour leur réparation ou construction.
 
 ## Début de l'aventure
 
@@ -50,3 +52,4 @@ Après l'aventure, il est de bon ton de faire un petit débriefing pour faire le
 * Vérifier l'amusement des joueurs, en particulier lors d'une "défaite".
 * Donner quelques indications sur les conséquences prévisibles de l'aventure
 * Prendre le pouls sur les prochaines étapes potentielles des PJ
+* Donner un point d'évolution à tous les personnage qui ont participé à l'aventure.

@@ -1,6 +1,6 @@
 # L'humanité
 
-> **/!\ Ce document est réservé aux MJ !**
+> **⚠️ Ce document est réservé aux MJ !**
 
 ## L'humanité n'est plus
 

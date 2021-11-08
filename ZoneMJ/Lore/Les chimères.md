@@ -1,20 +1,20 @@
 # Les chimères
 
-> **Ce document peut être lu par les joueurs.**
+> **✔️ Ce document peut être lu par les joueurs.**
 
->> ### Points clés
->>
->> * Produit par Dao Internationnal
->> * Code produit : Dao-CX-2.1.18
->> * Nom de produit : Chimère Dao, Série 2
->> * Fonctions : Nourrice, Aide domestique, Personnel d’accueil, Compagnon, Mascotte, Assistant community manager 
->> * Corps biomécanique (mélange organique et nanotechnologique)
->> * Ressemble a des animaux anthropomorphes
->> * Un mètre vingt de haut pour 30 kilogrammes
->> * Conscience basée sur une intelligence artificielle
->> * Plusieurs millénaires d'entraînement (temps subjectif)
->> * Espérance de vie non limitée
->> * Compatible avec les implants nanotechnologiques de Dao Int.
+> ### Points clés
+>
+> * Produit par Dao Internationnal
+> * Code produit : Dao-CX-2.1.18
+> * Nom de produit : Chimère Dao, Série 2
+> * Fonctions : Nourrice, Aide domestique, Personnel d’accueil, Compagnon, Mascotte, Assistant community manager 
+> * Corps biomécanique (mélange organique et nanotechnologique)
+> * Ressemble a des animaux anthropomorphes
+> * Un mètre vingt de haut pour 30 kilogrammes
+> * Conscience basée sur une intelligence artificielle
+> * Plusieurs millénaires d'entraînement (temps subjectif)
+> * Espérance de vie non limitée
+> * Compatible avec les implants nanotechnologiques de Dao Int.
 
 ## Un produit de l'humanité
 
@@ -24,7 +24,7 @@ Elles ressemblent à des animaux anthropomorphes d'un mètre vingt de haut avec 
 
 Ces chimères étaient vendues ou louées pour remplir différentes fonctions, allant d'une aide à domicile à la représentation d'autres sociétés dans les médias. Ces rôles tiraient principalement partie de leur aspect mignon mais aussi des capacités bien réelles de ces chimères.
 
-Il est à noter que ces chimères n'étaient pas réputées sentientes, ce qui laisse sous entendre que celle qui s'éveillent dans ce nouveau monde ne sont peut être pas complètement intègres. À moins que Dao Int. n'ait menti à l'époque.
+Il est à noter que ces chimères n'étaient pas réputées sentientes, ce qui laisse sous entendre que celle qui s'éveillent dans ce nouveau monde ne sont peut-être pas complètement intègres. À moins que Dao Int. n'ait menti à l'époque.
 
 ## Un modèle évolutif
 
