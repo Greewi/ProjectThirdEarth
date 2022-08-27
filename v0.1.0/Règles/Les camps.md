@@ -23,7 +23,7 @@ Le camp est pratiquement un personnage à part entière. Il possède sa propre f
 Les éléments du camp sont répartis entre les catégories suivantes : Traits de camp, Exploitations, Installations et Habitants.
 
 Les **Traits de camp** représentent les points particuliers du camp comme sa situation, ses défenses naturelles, son environnement, etc. Pour les évaluer, vous utiliserez l'échelle suivante :
-* Inutile (0) : le trait n'a aucune intérêt ;
+* Inutile (0) : le trait n'a aucun intérêt ;
 * Pratique (1) : le trait est utile au camp ;
 * Avantageux (2) : le trait apporte un avantage décisif sur un aspect donné ;
 * Ultime (3) : le trait pourrait être la raison même de l'existence du camp.
@@ -41,16 +41,16 @@ Les **Installations** représentent les bâtiments, ateliers et machines du camp
 * Avancée (3) : l'installation pourrait relever de la science-fiction futuriste.
 
 Les **Habitants** représentent les autres habitants du camps qu'il s'agisse d'animaux domestiques ou de "représentants" d'autres factions. Leur échelle d'évaluation reprend celle des relations :
-* Indifférent (0) : l'habitant n'a pas de rapport avec les chimères et n'a pas de raison d'accepter de les aider.
-* Coopératif (1) : l'habitant accèptera d'aider les chimères tant que ça ne lui coûtera rien ;
-* Allié (2) : l'habitant accèptera d'aider les chimères tant qu'il ne se met pas elle-même en danger ;
+* Indifférent/Sauvage (0) : l'habitant n'a pas de rapport avec les chimères et n'a pas de raison d'accepter de les aider.
+* Coopératif/Domestiqué (1) : l'habitant accèptera d'aider les chimères tant que ça ne lui coûtera rien ;
+* Allié/Dressé (2) : l'habitant accèptera d'aider les chimères tant qu'il ne se met pas lui-même en danger ;
 * Dévoué (3) : l'habitant fera n'importe quoi pour aider les chimères, même si ça peut le mettre en péril.
 
-> *« C'est fou tout ce qu'on peut faire avec le bambou ! Bon c'est aussi un peu dangereux... Vous saviez que "l'écorce" du bambou était aussi tranchante ? Ben maintenant on a aussi des couteaux... et moi, une petite cicatrice qui se résorbera dans quelques temps. »*
+> *« C'est fou tout ce qu'on peut faire avec le bambou ! Bon c'est aussi un peu dangereux… Vous saviez que "l'écorce" du bambou était aussi tranchante ? Ben maintenant on a aussi des couteaux... et moi, une petite cicatrice qui se résorbera dans quelques temps. »*
 
 ## Les projets
 
-Les chimères vont pouvoir développer leur camps en se lançant dans des projets pour améliorer leur camp, leurs outils et globalement améliorer leurs conditions de vie. Lors de chaque entreséance, elles vont choisir collégalement un projet sur lequel travailler. Par exemple elles peuvent vouloir construire un grenier, développer des outils en fer, etc.
+Les chimères vont pouvoir développer leur camps en se lançant dans des projets pour améliorer leur camp, leurs outils et globalement améliorer leurs conditions de vie. Lors de chaque entreséance, elles vont choisir collégialement un projet sur lequel travailler. Par exemple elles peuvent vouloir construire un grenier, développer des outils en fer, etc.
 
 Pour réaliser un projet donné, les chimères doivent remplir un certain nombre de prérequis. Pour commencer, elles doivent possèder certains outils et installations. Ensuite, il leur faut disposer des ressources nécessaires : soit rapportées lors d'une expédition précédente, soit disponibles dans l'une des explotations à proximité du camp.
 

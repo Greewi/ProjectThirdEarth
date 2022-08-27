@@ -23,7 +23,9 @@ La seule autre présence qui tranche avec ce décors primitif n'est autre que la
 
 ## L'humanité n'existe plus
 
-Rapidement, les chimères vont se rendre compte qu'il n'y a plus aucune communication radio et que le réseau GPS ne fonctionne plus.
+Rapidement, les chimères vont se rendre compte qu'il n'y a plus aucune communication radio et que le réseau de localisation ne fonctionne plus.
+
+> Le réseau de localisation est supposé être accessible n'importe où sur Terre. De ce qu'en savent les chimères, la pub indiquait que les satellites étaient censés durer deux siècles.
 
 La vallée dans laquelle elles se trouvent est remplie d'une jungle contenant notamment pas mal de bambou ce qui laisse supposer une situation en Asie.
 

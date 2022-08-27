@@ -2,7 +2,7 @@
 
 > **⚠️ Ce document est réservé aux MJ !**
 
-> **⚠️ Ce document contient du contenu non finalisé et hypothétique susceptible qui n'a que peu de chance d'être inclus dans les futures versions !**
+> **⚠️ Ce document contient du contenu non finalisé et hypothétique qui n'a que peu de chance d'être inclus dans les futures versions !**
 
 >> ### Détails des projets
 >> 

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Commandez votre chimère</title>
+
+	<style>
+		/* General layout */
+		body {
+			padding: 0;
+			margin: 0;
+			display: grid;
+			grid-template-columns: 1fr minmax(auto, 600px) 1fr;
+			grid-template-rows: 80px 1fr 40px;
+			grid-template-areas: "header header header" ". content ." "footer footer footer";
+			width: 100vw;
+			height: 100vh;
+			background-color: white;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+		.header {
+			display: grid;
+			grid-template-columns: 1fr minmax(auto, 600px) 1fr;
+			grid-area: header;
+			background-color: #1a5475;
+			padding:10px;
+		}
+		.header h1 {
+			grid-column: 2/3;
+		}
+		.mainApplication {
+			grid-area: content;
+			overflow-y: auto;
+			padding: 10px;
+		}
+		.footer {
+			display: grid;
+			grid-template-columns: 1fr minmax(auto, 600px) 1fr;
+			grid-area: footer;
+			background-color: #1a5475;
+			padding: 10px;
+		}
+		.footer_content {
+			grid-column: 2/3;
+			text-align: center;
+			
+		}
+		.footer_content_link {
+			text-decoration: none;
+			color: white;
+		}
+		.mainPanel {
+			display:none;
+		}
+		.mainPanel_displayed {
+			display: grid;
+			min-height: 100%;
+			grid-template-rows: 1fr 40px;
+		}
+		.mainPanel_buttons {
+			text-align: end;
+		}
+		/* General content*/
+		h1 {
+			color:white;
+		}
+		h2 {
+			color:#1a5475;
+		}
+		button {
+			box-sizing: border-box;
+			height: 30px;
+			padding: 8px;
+			border:none;
+			border-radius: 5px;
+			background: #1a5475;
+			color: white;
+		}
+		/* Form element */
+		.mainPanel_form {
+			display: grid;
+			grid-template-columns: 200px min-content 1fr;
+			grid-template-areas:
+				"label label label"
+				"input infosButton ."
+				"infosText infosText infosText";
+		}
+		.mainPanel_form_label {
+			grid-area: label;
+		}
+		.mainPanel_form_input {
+			grid-area: input;
+		}
+		.mainPanel_form_infosButton, .mainPanel_form_randomButton {
+			grid-area: infosButton;
+			margin-left: 10px;
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+		}
+		.mainPanel_form_infosText {
+			grid-area: infosText;
+			display: none;
+			margin: 5px;
+			padding: 5px;
+			font-size: 0.8rem;
+			border: solid 1px #777;
+			background: #EEE;
+			border-radius: 3px;
+		}
+		.mainPanel_form_infosText_displayed {
+			display: block;
+		}
+		select, input {
+			box-sizing: border-box;
+			height: 30px;
+			padding: 8px;
+			border:none;
+			border-radius: 5px;
+			background: #1a5475;
+			color: white;
+		}
+		button {
+			cursor: pointer;
+		}
+		button.button_next_grayed {
+			background: #9c9c9c;
+		}
+		/* Errors */
+		.error{
+			display: none;
+		}
+		.error_displayed{
+			display: block;
+		}
+		.errorPopup{
+			display: none;
+		}
+		.errorPopup_displayed{
+			display: grid;
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			grid-template-columns: 1fr 600px 1fr;
+			grid-template-rows: 1fr auto 1fr;
+			grid-template-areas: ". . ." ". content ." ". . .";
+			background: rgba(0,0,0,0.7);
+		}
+		.errorPopup_content{
+			grid-area: content;
+			background: #FFFFFF;
+			border: solid 2px #5e1414;
+			padding: 20px;
+			box-shadow: #000000 0px 0px 50px;
+		}
+		.errorPopup_header{
+			color: #5e1414;
+		}
+		.errorPopup_code{
+			margin: 5px;
+			padding: 5px;
+			font-size: 0.8rem;
+			border: solid 1px #777;
+			background: #EEE;
+			border-radius: 3px;
+			width: 100%;
+			box-sizing: border-box;
+			resize: none;
+			padding-top: 20px;
+			text-align: center;
+		}
+		/* About popup */
+		.aboutPopup{
+			display: none;
+		}
+		.aboutPopup_displayed{
+			display: grid;
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			grid-template-columns: 1fr 600px 1fr;
+			grid-template-rows: 1fr auto 1fr;
+			grid-template-areas: ". . ." ". content ." ". . .";
+			background: rgba(0,0,0,0.7);
+		}
+		.aboutPopup_content{
+			grid-area: content;
+			background: #FFFFFF;
+			border: solid 2px #1a5475;
+			padding: 20px;
+			box-shadow: #000000 0px 0px 50px;
+			border-radius: 10px;
+		}
+		.aboutPopup_header{
+			color: #1a5475;
+		}
+	</style>
+</head>
+<body>
+	<div id="errorPopup" class="errorPopup">
+		<div class="errorPopup_content">
+			<h1 class="errorPopup_header">Une erreur est survenue</h1>
+			<p>Une erreur inattendue s’est produite lors du processus de commande. Veuillez prendre contact avec notre service client et leur communiquer le code de commande suivant :</p>
+			<textarea id="errorPopupCode" class="errorPopup_code" readonly rows="1"></textarea>
+			<p>Note : vous n'avez pas été débité.</p>
+		</div>
+	</div>
+	<div id="aboutPopup" class="aboutPopup">
+		<div class="aboutPopup_content">
+			<h1 class="aboutPopup_header">A propos</h1>
+			<p>Ce site est un outil de création de personnage pour un jeu de rôle. Il NE s'agit PAS d'un véritable site de vente en ligne. Aucune information saisie dans le formulaire n'est transmise à notre serveur. Le code généré à la fin de la procédure (aka le code de commande) est une chaine en base64 contenant les informations du personnage, à transmettre à votre meneur de jeu.</p>
+			<button id="aboutPopupClose">Fermer</button>
+		</div>
+	</div>
+	<div class="header">
+		<h1>Chimère Dao, Série 2</h1>
+	</div>
+	<div id="mainApplication" class="mainApplication">
+		<div id="intro" class="mainPanel">
+			<div class="mainPanel_content">
+				<h2>Votre futur compagnon</h2>
+				<p>Dao Int. est particulièrement fier de vous présenter la nouvelle version de ses fameuses chimères, les Chimères Dao, Série 2 ! Ces nouveaux compagnons vous accompagneront dans vos démarches, pourront représenter votre commerce et bien plus !</p>
+				<p>Fiche produit :</p>
+				<ul>
+					<li>Désignation : Chimère Dao, Série 2</li>
+					<li>Code produit : Dao-CX-2.1.18</li>
+					<li>Dimensions : 1,2 mètres</li>
+					<li>Poids : 31kg</li>
+					<li>Consomation : 1800 kcal/jour</li>
+					<li>Autonomie : 18 jours (3 jours sans eau)</li>
+					<li>Logiciel : EvolvAI (Dao Int. Tech division)</li>
+					<li>Compatible avec la technologie Dao Nanotechnology Framework</li>
+					<li>Durée de vie non artificiellement limitée</li>
+					<li>Garantie 3 ans</li>
+				</ul>
+			</div>
+			<div class="mainPanel_buttons">
+				<button class="button_next">Suivant</button>
+			</div>
+		</div>
+		<div id="order" class="mainPanel">
+			<div class="mainPanel_content">
+				<div class="mainPanel_form">
+					<label class="mainPanel_form_label" for="order_template"><h2>Espèce</h2></label>
+					<select class="mainPanel_form_input" name="order_template" id="order_template">
+						<option value="1">Chien viverrin (tanuki)</option>
+						<option value="2">Loup</option>
+						<option value="3">Renard roux</option>
+						<option value="4">Renard corsac</option>
+						<option value="5">Renard du Tibet</option>
+						<option value="6">Lynx</option>
+						<option value="7">Panthère (léopard)</option>
+						<option value="8">Panthère des neiges</option>
+						<option value="9">Panthère nébuleuse</option>
+						<option value="10">Tigre</option>
+						<option value="11">Ours brun</option>
+						<option value="12">Ours noir d’Asie</option>
+						<option value="13">Panda géant</option>
+						<option value="14" selected="selected">Panda roux</option>
+					</select>
+					<button class="mainPanel_form_infosButton">?</button>
+					<div class="mainPanel_form_infosText">L’espèce est un critère cosmétique qui n’a aucun impact sur les capacités ou performances de votre chimère. Notez toutefois que les espèces suivantes ne possèdent pas de queue : Ours brun, Ours noir d’Asie, Panda géant.</div>
+				</div>
+				<div class="mainPanel_form">
+					<label class="mainPanel_form_label" for="order_gender"><h2>Genre</h2></label>
+					<select class="mainPanel_form_input" name="order_gender" id="order_gender">
+						<option value="M">Mâle</option>
+						<option value="F">Femelle</option>
+					</select>
+					<button class="mainPanel_form_infosButton">?</button>
+					<div class="mainPanel_form_infosText">Le genre de votre chimère est purement cosmétique et ne détermine que le timbre de sa voix ainsi que le pronom qu’elle privilégiera. Notez bien que les Chimères Dao, Série 2 ne sont pas sexuée.</div>
+				</div>
+				<div class="mainPanel_form">
+					<label class="mainPanel_form_label" for="order_name"><h2>Nom de la chimère</h2></label>
+					<input class="mainPanel_form_input" type="text" name="order_name" id="order_name">
+					<button class="mainPanel_form_randomButton">R</button>
+				</div>
+				<div class="mainPanel_form">
+					<label class="mainPanel_form_label" for="order_personality"><h2>Personnalité</h2></label>
+					<select class="mainPanel_form_input" name="order_personality" id="order_personality">
+						<option value="1">Attentionné/e</option>
+						<option value="2">Énergique</option>
+						<option value="3">Observateur/trice</option>
+						<option value="4">Persévérant/e</option>
+						<option value="5">Discrèt/e</option>
+					</select>
+					<button class="mainPanel_form_infosButton">?</button>
+					<div class="mainPanel_form_infosText">La personnalité de votre chimère n’impacte pas les performances ou les capacités de votre chimère. Toutefois ceci peut influer sur les solutions privilégiées par leur IA. Plus d’information dans notre contrat utilisateur, section données personnelles et comportement de la chimère.</div>
+				</div>
+			</div>
+			<div class="mainPanel_buttons">
+				<button class="button_next">Suivant</button>
+			</div>
+		</div>
+		<div id="delivery" class="mainPanel">
+			<div class="mainPanel_content">
+				<h2>Livraison</h2>
+				<p class="infosBox">Chargement des options de livraison en cours</p>
+				<pre class="error" id="deliveryError1">WARNING : Delivery system timeout. Retrying...</pre>
+				<pre class="error" id="deliveryError2">WARNING : Delivery system timeout. Retrying...</pre>
+				<pre class="error" id="deliveryError3">WARNING : Delivery system timeout. Retrying...</pre>
+				<pre class="error" id="deliveryError4">WARNING : Delivery system timeout. Retrying...</pre>
+				<pre class="error" id="deliveryError5">WARNING : Delivery system timeout. Canceling...</pre>
+				<pre class="error" id="deliveryError6">ERROR : Illegal state exception : Dao Network offline.</pre>
+				<pre class="error" id="deliveryError7">Canceling failed : no shiping address defined.</pre>
+			</div>
+			<div class="mainPanel_buttons">
+				<button class="button_next button_next_grayed">Suivant</button>
+			</div>
+		</div>
+		<div id="payment" class="mainPanel">
+			<div class="mainPanel_content">
+				<h2>Paiement</h2>
+				<p class="infosBox">Chargement des options de paiement en cours</p>
+				<pre class="error" id="paymentError1">WARNING : Shipping information not found. Loading default informations.</pre>
+				<pre class="error" id="paymentError2">ERROR : No paiment method found for this country. Canceling...</pre>
+				<pre class="error" id="paymentError3">ERROR : Canceling failed : order already created.</pre>
+				<pre class="error" id="paymentError4">ERROR : Illegal state exception : Dao Network offline.</pre>
+				<pre class="error" id="paymentError5">WARNING : Order placed in queue, waiting for processing...</pre>
+			</div>
+			<div class="mainPanel_buttons">
+				<button class="button_next button_next_grayed">Suivant</button>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<nav class="footer_content">
+			<a class="footer_content_link" href="" id="navlink_about">À propos</a>
+		</nav>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+const femaleNames = ["Ai", "An", "Bai", "Bik", "Feng", "Heng", "Hua", "Huan", "Jia", "Jia Li", "Jiahao", "Jing", "Lan", "Li Hua", "Li Mei", "Li Ming", "Lian", "Ling", "Lixue", "Masa", "Masumi", "Mei", "Naomi", "Natsuki", "Natsumi", "Ning", "Niu", "Qi", "Rika", "Riko", "Shang-Yang", "Shenlong", "Shizuko", "Sora", "Teng", "Tianlong", "Xiang Liu", "Xinyi", "Xiulan", "Xiuying", "Xue", "Ya", "Yijun", "Ying", "Yu Yan", "Yue", "Zhulong"];
+const maleNames = ["Bao", "Cheng‐Gong", "Cheung", "Chi", "Chiang", "Chin", "Da", "De", "Dilong", "Fai", "Feng", "Fenghuang", "Fu", "Fucanglong", "Heng", "Howin", "Huan", "Hui", "Huli jing", "Hundun", "Huo", "Jiaolong", "Jingwei", "Jiufeng", "Joe", "Jun", "Keung", "Liang", "Long", "Manchu", "Mo Chou", "Na", "Qing Niao", "Rui Shi", "Shu", "Shun", "Wan", "Wonton", "Yaling", "Ying", "Ying Yue", "Yinglong", "Yun", "Zhulong"];
+
+const Order = class {
+	constructor() {
+		this.template = 0;
+		this.gender = "M";
+		this.name = "";
+		this.personality = 0;
+	}
+}
+
+const MainApplication = class {
+	constructor(rootElement) {
+		this._order = new Order();
+		this._rootElement = rootElement;
+		this._introPanel = new MainPanel(rootElement.querySelector("#intro"));
+		this._orderPanel = new OrderMainPanel(rootElement.querySelector("#order"), this._order);
+		this._deliveryPanel = new MainPanel(rootElement.querySelector("#delivery"));
+		this._paymentPanel = new MainPanel(rootElement.querySelector("#payment"));
+		this._introPanel.setOnNext(()=>this.displayOrderPanel());
+		this._orderPanel.setOnNext(()=>this.displayDeliveryPanel());
+		this._introPanel.show();
+
+		this._errorPopup = document.querySelector("#errorPopup");
+		this._errorPopupCode = document.querySelector("#errorPopupCode");
+
+		this._aboutPopup = document.querySelector("#aboutPopup");
+		this._aboutButton = document.querySelector("#navlink_about");
+		this._aboutCloseButton = document.querySelector("#aboutPopupClose");
+		this._aboutButton.addEventListener("click", (e)=>this.displayAboutPopup(e));
+		this._aboutCloseButton.addEventListener("click", (e)=>this.hideAboutPopup(e));
+	}
+
+	async displayOrderPanel() {
+		await this._introPanel.hide();
+		await this._orderPanel.show();
+	}
+
+	async displayDeliveryPanel() {
+		const timeScale = 1;
+		await this._orderPanel.hide();
+		await this._deliveryPanel.show();
+		await this.wait(2000*timeScale);
+		this.logError("deliveryError1");
+		await this.wait(2000*timeScale);
+		this.logError("deliveryError2");
+		await this.wait(2000*timeScale);
+		this.logError("deliveryError3");
+		await this.wait(2000*timeScale);
+		this.logError("deliveryError4");
+		await this.wait(2000*timeScale);
+		this.logError("deliveryError5");
+		await this.wait(1000*timeScale);
+		this.logError("deliveryError6");
+		await this.wait(1000*timeScale);
+		this.logError("deliveryError7");
+		await this.wait(2500*timeScale);
+		await this._deliveryPanel.hide();
+		await this._paymentPanel.show()
+		await this.wait(2000*timeScale);
+		this.logError("paymentError1");
+		await this.wait(1500*timeScale);
+		this.logError("paymentError2");
+		await this.wait(1000*timeScale);
+		this.logError("paymentError3");
+		await this.wait(1000*timeScale);
+		this.logError("paymentError4");
+		await this.wait(1500*timeScale);
+		this.logError("paymentError5");
+		await this.wait(2000*timeScale);
+		await this.displayErrorPopup();
+	}
+
+	async logError(error) {
+		let errorLine = document.getElementById(error);
+		errorLine.classList.add("error_displayed");
+	}
+
+	async wait(delay) {
+		return new Promise((resolve)=>setTimeout(resolve, delay));
+	}
+
+	async displayErrorPopup() {
+		let code = btoa(`${this._order.template}-${this._order.gender}-${this._order.personality}-${this._order.name}`);
+		this._errorPopupCode.value = code;
+		this._errorPopup.classList.add("errorPopup_displayed");
+	}
+
+	async displayAboutPopup(e) {
+		this._aboutPopup.classList.add("aboutPopup_displayed");
+		e.preventDefault();
+	}
+
+	async hideAboutPopup() {
+		this._aboutPopup.classList.remove("aboutPopup_displayed");
+	}
+}
+
+const MainPanel = class {
+	/**
+	 * @param {HTMLElement} element the HTML element of the panel
+	 */
+	constructor(element) {
+		this._element = element;
+
+		this._onNext = () => {};
+		this._nextButton = element.querySelector(".button_next");
+		this._nextButton?.addEventListener("click", ()=>this._onNext());
+	}
+
+	show() {
+		this._element.classList.add("mainPanel_displayed");
+	}
+
+	hide() {
+		this._element.classList.remove("mainPanel_displayed");
+	}
+
+	setOnNext(callback) {
+		this._onNext = callback;
+	}
+}
+
+const OrderMainPanel = class extends MainPanel {
+	/**
+	 * @param {HTMLElement} element the HTML element of the panel
+	 */
+	constructor(element, order) {
+		super(element);
+		this._order = order;
+		this._templateInput = element.querySelector("#order_template");
+		this._genderInput = element.querySelector("#order_gender");
+		this._nameInput = element.querySelector("#order_name");
+		this._personalityInput = element.querySelector("#order_personality");
+		for(let infosButton of element.querySelectorAll(".mainPanel_form_infosButton")){
+			infosButton.addEventListener("click", ()=>this.toggleInfos(infosButton));
+		}
+		let randomNameButton = element.querySelector(".mainPanel_form_randomButton");
+		randomNameButton.addEventListener("click", ()=>this.setRandomName());
+		this.setRandomName();
+
+		this._order.template = this._templateInput.value;
+		this._templateInput.addEventListener("change", ()=>{this._order.template = this._templateInput.value;})
+		this._order.gender = this._genderInput.value;
+		this._genderInput.addEventListener("change", ()=>{this._order.gender = this._genderInput.value;})
+		this._order.name = this._nameInput.value;
+		this._nameInput.addEventListener("change", ()=>{this._order.name = this._nameInput.value;})
+		this._order.personality = this._personalityInput.value;
+		this._personalityInput.addEventListener("change", ()=>{this._order.personality = this._personalityInput.value;})
+		
+	}
+
+	toggleInfos(infosButton) {
+		let infosText = infosButton.parentElement.querySelector(".mainPanel_form_infosText");
+		infosText.classList.toggle("mainPanel_form_infosText_displayed");
+	}
+
+	setRandomName() {
+		let gendersName = this._genderInput.value == "M" ? maleNames : femaleNames;
+		this._nameInput.value = gendersName[Math.floor(Math.random() * gendersName.length)];
+		this._order.name = this._nameInput.value;
+	}
+}
+
+const mainApplication = new MainApplication(document.getElementById("mainApplication"));
+
+</script>
+</body>
+</html>

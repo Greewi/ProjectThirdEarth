@@ -19,3 +19,51 @@ La progression des chimères en elle-même est tributaire des sources d'élémen
 
 Il y a donc principalement deux sources de progression pour les chimères : ce qu'elles sont en mesure de faire elle-même et ce qu'elle peuvent obtenir auprès des anciens dieux.
 
+## Principaux paliers
+
+Éveil : début de la partie pour les chimères.
+
+* L'humanité à disparu : les chimères quand les chimères se rendent à l'évidence qu'il n'y a plus d'humain.
+* Les ruines : les chimères découvrent une ruine des anciens dieux.
+* La faune : les chimères sont pris à parti par la faune.
+
+* Les robots : les chimères apperçoivent un groupe de robots pour la première fois. Ceux-ci effraient une panthère avec leurs systèmes sonore.
+* Les nuées : les chimères découvrent une nuée.
+* La cité : les chimères découvrent une installation active.
+* La guerre infinie : les chimères assistent à un combat entre des robots de différentes factions.
+* 
+
+
+
+Age de fer : atteint lorsque les chimères sont en mesure de faire fondre et de forger le fer. Leur donne accès à pratiquement tous les outils en fer.
+
+Verrerie : atteint lorsque les chimères peuvent se constituer de la verrerie de précision. Leur donne accès à la chimie avancée.
+
+Alcool : atteint lorsque les chimères sont en mesure de produire leur propre carburant pour les moteurs à combustible.
+
+Électricité : atteint lorsque les chimères possèdent une source d'électricité (moulin à eau + altenateur, panneaux photo-voltaiques). Leur donne la capacité de recharger les outils électroniques et électromécaniques.
+
+Premier contact : atteint lorsque les chimères sont entrées en contact avec Pangu, Adity ou Indra.
+
+
+
+
+## Paliers de progression souhaitée
+
+Séance 1 (le réveil) :
+* Événements : Réveil des chimères, Découverte de l'environnement de départ
+* Projets : Les premières pierres du camp
+
+Séance 2 à 5 (le premier camp) :
+* Événements : Découverte d'une ruine des anciens dieux, attaque d'animaux sauvages, première tempête, premier robots de prospection
+* Projets : abri, outils primitifs, petit fourneau, poterie, tissage du bambou, grenier, rizière
+
+Séance 6 à 10 (vers l'age de fer) :
+* Évenements : Découverte d'une ruine active, Premier témoin de Xue, Exploration de la ruine et découverte du premier fragment
+* Projets : fin des projets précédents, Charbon de bois, Fusion du fer, Forge
+* Spécial : accès aux première modifications, en fonction du contact avec le fragment
+
+Séance 11 à 20 (la colonie) :
+* Événements : 
+* Projets : machine à filer la soie, vêtements de tissus, moulin, potasse, haut fourneau, chaux-vive, céramique, pirogue, 
+

@@ -34,7 +34,7 @@ Dans tous les cas, l'évolution des chimères doit être faite durant les entres
 
 ## Traits
 
-Votre chimère est un être manufacturé pratiquement standard à la sortie de sa capsule de stockage. Mais les nouvelles expériences et autres « accidents de la vie » vont probablement laisser quelques marques qui vont la distinguer des autres chimères. Et potentiellement la rendre meilleure pour certaines choses. Par exemple, certaines chimères peuvent devenir particulièrement prudentes au contact répété avec le danger ou s'être enrdurcie moralement à force de subir des coup du sort.
+Votre chimère est un être manufacturé pratiquement standard à la sortie de sa capsule de stockage. Mais les nouvelles expériences et autres « accidents de la vie » vont probablement laisser quelques marques qui vont la distinguer des autres chimères. Et potentiellement la rendre meilleure pour certaines choses. Par exemple, certaines chimères peuvent devenir particulièrement prudentes au contact répété avec le danger ou s'être endurcie moralement à force de subir des coup du sort.
 
 Ces changements peuvent aussi provenir de leurs propres choix. Par exemple, certaines chimères peuvent suivre un entrainement physique pour être toujours au meilleur de leurs capacités comme travailler leur endurance ou leur force.
 
@@ -72,8 +72,8 @@ Même si la civilisation humaine a disparu, votre chimère reste un être sociab
 >
 > * Indifférent (0) : la relation n'a pas de rapport avec la chimère et n'a pas de raison d'accepter de les aider.
 > * Coopératif (1) : la relation acceptera d'aider la chimère tant que ça ne lui coûtera rien ;
-> * Allié (2) : la relation acceptera d'aider la chimère tant qu'il ne se met pas elle-même en danger ;
-> * Dévoué (3) : la relation fera n'importe quoi pour aider la chimère, même si ça peut le mettre en péril.
+> * Allié (2) : la relation acceptera d'aider la chimère tant qu'elle ne se met pas elle-même en danger ;
+> * Dévoué (3) : la relation fera n'importe quoi pour aider la chimère, même si ça peut la mettre en péril.
 
 ## Équipement
 
@@ -85,8 +85,8 @@ Aussi, une fois que votre chimère aura accès à la technologie nécessaire, el
 
 > ### Échelle d'évaluation de l'équipement
 > 
-> * Improvisé (0) : cette pièce d'équipement est complètement improvisé et n'est peut être qu'une branche ou une pierre.
-> * Primitif (1) : cette pièce d'équipement est issu d'une fabrication primitive qui relève de l'age de fer tout au plus.
+> * Improvisé (0) : cette pièce d'équipement est complètement improvisée et n'est sans doute qu'une branche ou une pierre.
+> * Primitif (1) : cette pièce d'équipement est issus d'une fabrication primitive qui relève de l'age de fer tout au plus.
 > * Manufacturé (2) : cette pièce d'équipement pourrait provenir d'une chaine de production moderne.
 > * Hi-tech (3) : cette pièce d'équipement semble relever tout simplement de la science-fiction, et pourtant elle est bien là.
 
@@ -106,6 +106,7 @@ Avec de l'aide et le matériel approprié, votre chimère peut se faire installe
 * Pelage mimétique (2) : permet à votre chimère de changer de couleur et de reproduire l'arrière plan avec son pelage.
 * Griffe de métal (2) : octroit à votre chimère la capacité de métaboliser le fer pour entretenir de solides griffes rétractibles capables de transpercer ou de déchirer le bois et tout un tas de matériaux composites.
 * Code correcteur (2) : permet à votre chimère de régénérer passivement les dégâts internes causés par les radiations et d'endurer des niveaux de radiations considérables pendant une courte durée sans dommage significatif.
+* Vision noctune (2) : permet à la chimère de voir dans l'obscurité.
 * Ascension (3) : détruit le corps de votre chimère et fusionne son esprit dans une nuée. Celà lui donne un contrôle total dessus et lui permet même de matérialiser un simulacre de son corps. En revanche, elle devient vulnérable à tout ce qui pourrait affecter une nuée. Il s'agit certainement de la modification la plus radicale, la plus puissante et la plus dangereuse que puisse obtenir votre chimère !
 
 > *« La société Dao Int. commercialisait certains des kits de modifications sous le terme générique « Biomechanic Mod ». Évidemment, les modifications de cette époque ne sont plus là, mais la technologie semble avoir survécu à nos créateurs. »*

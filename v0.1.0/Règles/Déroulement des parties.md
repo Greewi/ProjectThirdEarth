@@ -21,7 +21,7 @@ L'entreséance se déroule de façon asynchrone, par exemple sur un forum ou Dis
 On commence par convenir d'une heure de fin pour la partie (compter un quart d'heure pour le débriefing qui y fait suite).
 
 Parallèlement :
-* S'il y a de nouveaux joueurs, le MJ leur explique rapidement le jeu aux nouveaux et leur fait créer rapidement leur personnage.
+* S'il y a de nouveaux joueurs, le MJ leur explique rapidement le jeu et leur fait créer rapidement leur personnage.
 * Les autres joueurs choisissent un objectif pour la séance (Explorer un secteur, Fouiller des ruines, Affronter une menace, Contacter/négocier/commercer avec une autre faction). Note : Si le camp des PJ est directement menacé au début de la séance, les joueurs n'auront pas le choix que d'y faire face !
 
 Les personnages ont eu un peu de temps pour eux depuis la séance précédente. Ils perdent les états qu'ils y avaient obtenus et ont potentiellement avancé sur leur progression (Note : les intrigues de progression sont gérées hors séance). De plus, ils ont entrenu leur camps et l'équipement à leur disposition a été renouvelé si le camps possède les installations pour leur réparation ou construction.
@@ -52,4 +52,4 @@ Après l'aventure, il est de bon ton de faire un petit débriefing pour faire le
 * Vérifier l'amusement des joueurs, en particulier lors d'une "défaite".
 * Donner quelques indications sur les conséquences prévisibles de l'aventure
 * Prendre le pouls sur les prochaines étapes potentielles des PJ
-* Donner un point d'évolution à tous les personnage qui ont participé à l'aventure.
+* Rappeler à tout le monde qu'ils peuvent avancer leurs intrigues de progression d'une étape (et en créer une nouvelle s'ils n'en ont pas).
