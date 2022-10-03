@@ -31,12 +31,11 @@ Il existe d'autres moyens de transporter de l'équipement ou des ressources :
 
 ## Niveau technologique
 
-L’équipement des chimères dépend de ce qu’elles peuvent produire dans leur camp et donc de leur niveau technologique. Au début de chaque aventure, les chimères choisissent leur équipement parmi ce qui est disponible en prenant en compte l'encombrement de cet équipement.
+L’équipement des chimères dépend de ce qu’elles peuvent produire dans leur camp et donc de leur niveau technologique. La valeur de l’équipement dépend directement de sa qualité et de son niveau technologique :
 
-La valeur de l’équipement dépend directement de sa qualité et de son niveau technologique :
 * **Primitif (1D)** : cet équipement est fabriqué avec peu de moyen et consiste principalement en des outils de bambou, des pierres taillées, des paniers et des cordages primitifs. Certains des outils les plus bruts des débuts de l’age de fer peuvent faire partie de cette catégorie. À l’inverse, une simple pierre ou branche n’entre même pas dans cette catégorie.
 * **Artisanal (2D)** : une fois l’age de fer atteint, les outils sont plus durables et bien plus adaptés. Il faut toutefois posséder une bonne maîtrise de la métallurgie et des autres procédés artisanaux pour y parvenir.
-* **Moderne ou futuriste (3D)** : principalement le fruit de la technologie récupérée dans les ruines, ces outils sont souvent particulièrement spécialisés et uniques. Leur rareté en font des accessoires précieux qu’il n’est pas toujours judicieux d’emporter au fin fond de la jungle.
+* **Avancé (3D)** : principalement le fruit de la technologie récupérée dans les ruines, ces outils sont souvent particulièrement spécialisés et uniques. Leur rareté en font des accessoires précieux qu’il n’est pas toujours judicieux d’emporter au fin fond de la jungle.
 
 >> ### Utilisation détournée
 >>

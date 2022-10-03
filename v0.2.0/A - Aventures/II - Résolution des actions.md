@@ -101,9 +101,16 @@ Si les camps avec le plus d’effort sont à égalité, alors tout le monde éch
 
 Lors d’une action, une chimère peut choisir de prendre des risques, c’est-à-dire de réduire ses chances de succès pour obtenir un effet supplémentaire en cas de réussite.
 
-Plus concrètement, elle peut choisir de jeter un dé en moins en échange d’un effet mineur en cas de réussite, par exemple <TODO/>, ou deux dés en échange d’un effet majeur, par exemple <TODO/>.
+Plus concrètement, elle peut choisir de jeter un dé en moins en échange d’un effet mineur en cas de réussite ou deux dés en échange d’un effet majeur. Ces effets sont proposéspar le joueur et doivent être validés par le meneur. Notez aussi qu'une chimère qui aide peut prendre un risque, mais elle ne peut pas échanger plus de dés qu’elle n’en lance.
 
-Une chimère qui aide peut prendre un risque, mais elle ne peut pas échanger plus de dés qu’elle n’en lance.
+Quelques exemples d'effets mineurs : 
+* économie de ressources utilisées dans l'action ;
+* ressources supplémentaires trouvées.
+
+Quelques exemples d'effets majeurs :
+* état soigné ;
+* déclenchement d'un événement externe (proposé par le joueur) ;
+* simplification d'une situation.
 
 ## Sacrifice
 
